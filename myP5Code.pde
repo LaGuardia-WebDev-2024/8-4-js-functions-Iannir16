@@ -3,14 +3,29 @@ void setup(){
   size(600, 400); 
   background(255,255,255);
 
+  
+drawName();
+drawName();
+
+drawStar();
+drawStar();
+drawStar();
+drawStar();
+drawStar();
+};
+
+var drawName = function(){
   var textX = random(50, 550);
   var textY = random(50, 350);
-  var yourName = "Your Name";
+  var yourName = "Ianni";
 
   fill(241,9,55);
   textSize(40);
   text("Hiiii, " + yourName, textX, textY);
-}
+};
+
+
+
 
 //🟢Draw Function - Runs on Repeat
 draw = function(){  
@@ -22,12 +37,14 @@ draw = function(){
 
 //🟡drawStar Function - custom function created by Ms. Hall
 var drawStar = function(){
-  var starSize = random(2,12);
-  var starX = mouseX + random(-12,12);
-  var starY = mouseY + random(-12,12);
+  var starSize = random(10,110);
+  var starX = mouseX + random(10,110);
+  var starY = mouseY + random(10,110);
   textSize(starSize);
   text("⭐",starX, starY);
 };
+
+
 
 //🟡mouseClicked Function - will run when the mouse is clicked
 mouseClicked = function(){
